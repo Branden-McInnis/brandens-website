@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+    const url = window.location.href;
+    const newUrl = url.replace(/\/$/, '').replace(/\.html$/, '');
+    window.location.replace(newUrl);
+  </script>
+</head>
+<body>
+  <p>Please wait while you are being redirected...</p>
+</body>
+</html>
