@@ -112,6 +112,7 @@
 }
 
 @media screen and (max-width: 960px) {
+  
   .navbar__container {
     display: flex;
     justify-content: space-between;
@@ -302,7 +303,7 @@
     justify-self: center;
     width: 100%;
     margin: 0 auto;
-    height: 90vh;
+    height: 250vh;
   }
 
   .main__content {
