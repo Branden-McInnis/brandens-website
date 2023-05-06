@@ -295,7 +295,7 @@
   width: 100%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .main__container {
     display: grid;
     grid-template-columns: auto;
@@ -323,9 +323,62 @@
     margin-top: 1rem;
     font-size: 1rem;
   }
+
+  #main__img {
+    height: 25%;
+    width: 90%;
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+  .main__container {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-self: center;
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+  }
+
+  .main__content {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  .main__content h1 {
+    font-size: 2.5rem;
+    margin-top: 15rem;
+  }
+
+  .main__content h2 {
+    font-size: 2rem;
+  }
+
+  .main__content p {
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+
+  #main__img {
+    height: 75%;
+    width: 100%;
+  }
+  
 }
 
 @media screen and (max-width: 480px) {
+
+  .main__container {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-self: center;
+    width: 100%;
+    margin: 0 auto;
+    height: 175vh;
+  }
+
   .main__content h1 {
     font-size: 2rem;
     margin-top: 3rem;
@@ -344,6 +397,73 @@
     padding: 12px 36px;
     margin: 2.5rem 0;
   }
+
+}
+
+@media screen and (max-width: 375px) {
+
+  .main__container {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-self: center;
+    width: 100%;
+    margin: 0 auto;
+    height: 230vh;
+  }
+
+  .main__content h1 {
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+
+  .main__content h2 {
+    font-size: 2rem;
+  }
+
+  .main__content p {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .main__btn {
+    padding: 12px 36px;
+    margin: 2.5rem 0;
+  }
+
+}
+
+@media screen and (max-width: 280px) {
+
+  .main__container {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-self: center;
+    width: 100%;
+    margin: 0 auto;
+    height: 300vh;
+  }
+
+  .main__content h1 {
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+
+  .main__content h2 {
+    font-size: 2rem;
+  }
+
+  .main__content p {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .main__btn {
+    padding: 12px 36px;
+    margin: 2.5rem 0;
+  }
+
 }
 
 /* Footer CSS */
@@ -462,4 +582,10 @@
     padding: 10px;
     width: 100%;
   }
+
+  @media screen and (max-width: 375px) {
+    .website__right {
+      margin-bottom: 2rem;
+      font-size: 0.75rem;
+    }
 }
