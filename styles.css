@@ -5,7 +5,12 @@
   font-family: "Kumnh Sans", sans-serif;
 }
 
-/* hero section */
+/* Hero Section */
+
+body{
+  background-color: #0A0F0F;
+
+}
 
 .navbar {
   background: #0A0F0F;
@@ -123,6 +128,7 @@
     width: 100%;
     max-width: 1300px;
     padding: 0;
+    
   }
 
   .navbar__menu {
@@ -213,32 +219,31 @@
   font-size: 0.25rem;
 }
 
-/*  Image Section CSS*/
+/*Main Section*/
 
 .main {
   background-color: #0A0F0F;
 }
 
 .main__container {
-  
+    overflow: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     align-content: space-evenly;
     justify-self: center;
     margin: 0 auto;
-    height: 90vh;
+    height: auto;
     background-color: #0A0F0F;
     z-index: 1;
     width: 100%;
     max-width: 1300px;
     padding: 0 50px;
-  
-  
 }
 
 .main__content h1 {
   font-size: 4rem;
+  margin-top: 5rem;
   background-color: #0A0F0F;
   background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
     background-size: 100%;
@@ -280,14 +285,12 @@
 }
 
 .main_img--container {
-
   margin: 1rem;
   height: 525px;
   width: 400px;
   border-radius: 4px;
   background-size: cover;
   position: relative;
-
 }
 
 #main__img {
@@ -299,13 +302,14 @@
 
 @media screen and (max-width: 1024px) {
   .main__container {
+    overflow: auto;
     display: grid;
     grid-template-columns: auto;
     align-items: center;
     justify-self: center;
     width: 100%;
     margin: 0 auto;
-    height: 250vh;
+    height: auto;
   }
 
   .main__content {
@@ -314,7 +318,6 @@
   }
   .main__content h1 {
     font-size: 2.5rem;
-    margin-top: 15rem;
   }
 
   .main__content h2 {
@@ -333,15 +336,31 @@
   
 }
 
+.hidden{
+  padding: 3rem;
+  opacity: 0;
+  transition: all 1s;
+  transform: translateX(-100%);filter: blur(5px);
+
+}
+
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+
+}
+
 @media screen and (max-width: 768px) {
   .main__container {
+    overflow: auto;
     display: grid;
     grid-template-columns: auto;
     align-items: center;
     justify-self: center;
     width: 100%;
     margin: 0 auto;
-    height: 100vh;
+    height: auto;
   }
 
   .main__content {
@@ -350,7 +369,6 @@
   }
   .main__content h1 {
     font-size: 2.5rem;
-    margin-top: 15rem;
   }
 
   .main__content h2 {
@@ -372,18 +390,18 @@
 @media screen and (max-width: 480px) {
 
   .main__container {
+    overflow: auto;
     display: grid;
     grid-template-columns: auto;
     align-items: center;
     justify-self: center;
     width: 100%;
     margin: 0 auto;
-    height: 175vh;
+    height: auto;
   }
 
   .main__content h1 {
     font-size: 2rem;
-    margin-top: 3rem;
   }
 
   .main__content h2 {
@@ -405,18 +423,19 @@
 @media screen and (max-width: 375px) {
 
   .main__container {
+    overflow: auto;
     display: grid;
     grid-template-columns: auto;
     align-items: center;
     justify-self: center;
     width: 100%;
     margin: 0 auto;
-    height: 230vh;
+    height: auto;
   }
 
   .main__content h1 {
     font-size: 2rem;
-    margin-top: 3rem;
+
   }
 
   .main__content h2 {
@@ -438,6 +457,7 @@
 @media screen and (max-width: 280px) {
 
   .main__container {
+    overflow: auto;
     display: grid;
     grid-template-columns: auto;
     align-items: center;
@@ -449,7 +469,6 @@
 
   .main__content h1 {
     font-size: 2rem;
-    margin-top: 3rem;
   }
 
   .main__content h2 {
@@ -475,7 +494,7 @@
   position: relative;
   background-color: #0A0F0F;
   padding: 5rem 2rem 2rem 2rem; 
-  display: flex;
+  display: flexbox;
   flex-direction: column;
   justify-content: center;
   align-items: center;
