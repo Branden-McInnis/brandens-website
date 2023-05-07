@@ -415,12 +415,12 @@ body{
   }
 
   .main__content h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .main__content p {
     margin-top: 2rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   .main__btn {
@@ -454,7 +454,7 @@ body{
 
   .main__content p {
     margin-top: 2rem;
-    font-size: 1.5rem;
+    font-size: 0.85rem;
   }
 
   .main__btn {
